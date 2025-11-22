@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Odanın İçindeki Gölgeler (Indie Korku)</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="menu">
+    <div class="menu-title">Odanın İçindeki Gölgeler</div>
+    <div class="menu-options">
+        <button id="play-btn">Oyna</button>
+        <button id="settings-btn">Ayarlar</button>
+        <button id="language-btn">Dil: TR</button> 
+    </div>
+    <div id="developer-name">Yapımcı: Kaiuvu</div>
+</div>
+
+<div id="settings-panel">
+    <div class="settings-content">
+        <h2>⚙️ Ayarlar</h2>
+        <div class="setting-item">
+            <label for="music-volume">Müzik Sesi (BG Music):</label>
+            <input type="range" id="music-volume" min="0" max="100" value="20">
+        </div>
+        <div class="setting-item">
+            <label for="sfx-volume">Efekt Sesi (SFX):</label>
+            <input type="range" id="sfx-volume" min="0" max="100" value="70">
+        </div>
+        <button id="close-settings-btn">Kapat</button>
+    </div>
+</div>
+
+<div id="game-container" style="display:none;">
+    <div id="game-image">
+        <div id="iron-door"></div> 
+        
+        <div id="table-lamp"></div> 
+        <div id="burn-book"></div>
+        <div id="rusty-key"></div>
+        
+        <div class="shadow"></div> 
+        
+        <div id="lighter-flame"></div>
+
+        <div id="book-focus">
+            <img id="book-image" src="jump2.png" alt="Kitaptaki Korkunç Resim"> 
+        </div>
+
+        <div id="good-end-screen">
+            <div class="good-end-text">OYUN BİTTİ</div>
+            <div class="good-end-subtext">İYİ SON</div>
+        </div>
+
+        <div id="jumpscare">
+            <img id="jumpscare-img" src="jump.png" alt="Jumpscare Görseli">
+        </div>
+    </div>
+
+    <div id="text-box">
+        <p id="game-text">Oyunun hikayesi burada başlayacak...</p>
+    </div>
+    
+    <div id="options-container"></div>
+</div>
+
+<audio id="step-sound" src="step.mp3"></audio>
+<audio id="jump-scare-sound" src="jump.mp3"></audio>
+<audio id="bg-music" src="background.mp3" loop></audio>
+<audio id="radio-cut" src="radio-cut.mp3"></audio>
+<audio id="scream-sound" src="bağırma.mp3"></audio>
+<audio id="sanity-loss-sound" src="jump2.mp3" loop></audio> 
+
+<script src="script.js"></script>
+</body>
+</html>
